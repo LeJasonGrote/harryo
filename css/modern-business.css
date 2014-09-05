@@ -1,0 +1,129 @@
+/*!
+ * Start Bootstrap - Modern Business HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    
+}
+
+.mybody {
+    text-align: center;
+    /*width: 400px;*/
+}
+
+.mybody p {
+    font-family: "tk-kepler-std-semicondensed";
+    font-style: normal;
+    font-weight: 300;
+    padding: 15px;
+}
+
+.img-portfolio {
+    margin-bottom: 30px;
+}
+
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+/* Home Page Carousel */
+.navbar {
+    /*background-color: #f2f6f9;*/
+}
+
+header.carousel {
+    height: 70%;
+}
+
+.carousel-caption h2 {
+    margin-bottom: 100px;
+    /*font-family: "tk-kepler-std-semicondensed";
+    font-weight: 300;*/
+}
+
+.carousel-caption a {
+    position: relative;
+    bottom: 90px;
+    font-size: 14px;
+    letter-spacing: .5px;
+}
+
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+    height: 100%;
+}
+
+
+header {
+    background-color: #030e1e;
+}
+
+header.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    opacity:0.8;
+}
+
+/* 404 Page Styles */
+
+.error-404 {
+    font-size: 100px;
+}
+
+/* Pricing Page Styles */
+
+.price {
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.price sup {
+    top: -20px;
+    left: 2px;
+    font-size: 20px;
+}
+
+.period {
+    display: block;
+    font-style: italic;
+}
+
+/* Footer Styles */
+
+footer {
+    width: 100%;
+}
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+    header.carousel .carousel {
+        height: 70%;
+        background-color: black;
+    }
+}
