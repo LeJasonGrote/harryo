@@ -895,8 +895,10 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  /*font-family: "tk-proxima-nova", sans-serif;*/
+  /*font-family: "brandon-grotesque", sans-serif;*/
+  /*font-size: 14px;*/
   line-height: 1.42857143;
   color: #333;
   background-color: #fff;
@@ -938,6 +940,8 @@ img {
   width: 100% \9;
   max-width: 100%;
   height: auto;
+  padding-right: 2em;
+  padding-bottom: 1em;
 }
 .img-rounded {
   border-radius: 6px;
@@ -1035,7 +1039,7 @@ h2,
 .h2,
 h3,
 .h3 {
-  margin-top: 20px;
+  margin-top: -2px;
   margin-bottom: 10px;
 }
 h1 small,
@@ -1214,10 +1218,10 @@ a.bg-danger:hover {
   background-color: #e4b9b9;
 }
 .page-header {
-  padding-bottom: 9px;
+  padding-bottom: 25px;
   margin: 40px 0 20px;
   border-bottom: 1px solid #eee;
-  text-align: center;
+  text-align: left;
 }
 ul,
 ol {
@@ -2723,10 +2727,11 @@ select[multiple].input-lg {
 }
 .btn {
   display: inline-block;
-  padding: 12px 20px;
-  margin-bottom: 0;
-  font-size: 14px;
-  font-weight: normal;
+  padding: 15px 23px;
+  margin-bottom: 3em;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .05em;
   line-height: 1.42857143;
   text-align: center;
   white-space: nowrap;
@@ -2738,7 +2743,8 @@ select[multiple].input-lg {
           user-select: none;
   background-image: none;
   border: 1px solid transparent;
-  border-radius: 2px;
+  /*border-radius: 2px;*/
+  text-transform: uppercase;
 }
 .btn:focus,
 .btn:active:focus,
@@ -2770,18 +2776,18 @@ fieldset[disabled] .btn {
   opacity: .65;
 }
 .btn-default {
-  color: #333;
-  background-color: #fff;
-  border-color: #ccc;
+  color: #18bc9c;
+  background-color: transparent;
+  border-color: #18bc9c;
 }
 .btn-default:hover,
 .btn-default:focus,
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-  color: #333;
-  background-color: #e6e6e6;
-  border-color: #adadad;
+  color: #fff;
+  background-color: #18bc9c;
+  border-color: #18bc9c;
 }
 .btn-default:active,
 .btn-default.active,
@@ -3136,17 +3142,18 @@ tbody.collapse.in {
   min-width: 160px;
   padding: 5px 0;
   margin: 2px 0 0;
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: 600;
   text-align: left;
   list-style: none;
   background-color: #fff;
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
-  border: 1px solid #ccc;
-  border: 1px solid rgba(0, 0, 0, .15);
-  border-radius: 4px;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-          box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  /*border: 1px solid #ccc;*/
+  /*border: 1px solid rgba(0, 0, 0, .15);*/
+  /*border-radius: 4px;*/
+  /*-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);*/
+          /*box-shadow: 0 6px 12px rgba(0, 0, 0, .175);*/
 }
 .dropdown-menu.pull-right {
   right: 0;
@@ -3176,7 +3183,7 @@ tbody.collapse.in {
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
-  color: #fff;
+  color: #18bc9c;
   text-decoration: none;
   background-color: #428bca;
   outline: 0;
@@ -3769,8 +3776,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar {
   position: relative;
-  min-height: 50px;
-  margin-bottom: 20px;
+  min-height: 70px;
+  /*max-height: 110px;*/
   border: 1px solid transparent;
 }
 @media (min-width: 768px) {
@@ -3833,7 +3840,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .container > .navbar-collapse,
 .container-fluid > .navbar-collapse {
   margin-right: -15px;
-  margin-left: -15px;
+  margin-left: 15px;
+  /*margin-top: 15px;*/
+  /*margin-bottom: 15px;*/
 }
 @media (min-width: 768px) {
   .container > .navbar-header,
@@ -3904,11 +3913,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-bottom: 8px;
   background-color: transparent;
   background-image: none;
-  border: 0px solid transparent;
-  border-radius: 4px;
+  border: 1px solid white;
+  border-radius: 2px;
 }
 .navbar-toggle:focus {
-  outline: 0;
+  outline: 1;
+
+
 }
 .navbar-toggle .icon-bar {
   display: block;
@@ -4204,13 +4215,13 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #777;
 }
 .navbar-inverse .navbar-nav > li > a {
-  color: #000;
+  /*color: #18bc9c;*/
   /*font-size: .9em;*/
 }
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
   color: #fff;
-  background-color: transparent;
+  background-color: #18bc9c;
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
@@ -4225,11 +4236,11 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   background-color: transparent;
 }
 .navbar-inverse .navbar-toggle {
-  border-color: #333;
+  border-color: #233140;
 }
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
-  background-color: #333;
+  background-color: #233140;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
   background-color: #fff;
@@ -4242,7 +4253,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
   color: #fff;
-  background-color: #080808;
+  background-color: #2c3e50;
 }
 @media (max-width: 767px) {
   .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
@@ -4252,7 +4263,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
     background-color: #080808;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-    color: #777;
+    color: #fff;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -4586,11 +4597,11 @@ a.list-group-item.active > .badge,
 }
 .thumbnail {
   display: block;
-  padding: 4px;
+  padding: 20px;
   margin-bottom: 20px;
   line-height: 1.42857143;
   background-color: #fff;
-  border: 1px solid #ddd;
+  /*border: 1px solid #ddd;*/
   border-radius: 4px;
   -webkit-transition: all .2s ease-in-out;
        -o-transition: all .2s ease-in-out;
@@ -4607,7 +4618,7 @@ a.thumbnail.active {
   border-color: #428bca;
 }
 .thumbnail .caption {
-  padding: 9px;
+  padding: 20px;
   color: #333;
 }
 .alert {
@@ -5867,7 +5878,7 @@ button.close {
 .carousel-caption {
   position: absolute;
   right: 15%;
-  bottom: 20px;
+  bottom: 115px;
   left: 15%;
   z-index: 10;
   padding-top: 20px;
@@ -5878,6 +5889,10 @@ button.close {
 }
 .carousel-caption .btn {
   text-shadow: none;
+  position: relative;
+  
+  bottom: -10px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .carousel-control .glyphicon-chevron-left,
